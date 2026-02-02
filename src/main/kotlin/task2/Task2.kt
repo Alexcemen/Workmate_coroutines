@@ -1,7 +1,6 @@
 package task2
 
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 
 fun <T> Flow<T>.throttleFirst(windowMills: Long): Flow<T> = flow {
